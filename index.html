@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="CP Engineering public portfolio showcase">
+  <title>CP Engineering Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">ENGINEERING PORTFOLIO · SYNTHETIC DATA</p>
+        <h1>CP Engineering</h1>
+        <p class="lede">A traceable engineering project cockpit connecting requirements, scope, risk, concept, cost, quote and decision readiness without hiding uncertainty.</p>
+      </div>
+      <div class="badge">Private core preserved</div>
+    </header>
+
+    <section class="notice">
+      <strong>Engineering boundary:</strong> this demo is not a certified calculation package and does not provide technical approval, safety certification or regulatory sign-off.
+    </section>
+
+    <section id="project" class="project"></section>
+
+    <section class="flow" aria-label="Engineering flow">
+      <span>Intake</span><b>→</b><span>Requirements</span><b>→</b><span>Scope</span><b>→</b><span>Risks</span><b>→</b><span>Concept</span><b>→</b><span>Cost</span><b>→</b><span>Quote</span><b>→</b><span>Human Gate</span>
+    </section>
+
+    <section id="kpis" class="kpis"></section>
+
+    <section class="grid2">
+      <article class="panel">
+        <div class="panelhead">
+          <div>
+            <p class="eyebrow">DECISION READINESS</p>
+            <h2>What blocks a decision?</h2>
+          </div>
+          <span id="readiness-badge"></span>
+        </div>
+        <div id="signals" class="signals"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panelhead">
+          <div>
+            <p class="eyebrow">COMMERCIAL TRACEABILITY</p>
+            <h2>Cost ≠ sale price</h2>
+          </div>
+        </div>
+        <div id="quote"></div>
+      </article>
+    </section>
+
+    <section class="grid2">
+      <article class="panel">
+        <div class="panelhead">
+          <div>
+            <p class="eyebrow">RISKS</p>
+            <h2>Risk supports — it does not decide</h2>
+          </div>
+        </div>
+        <div id="risks"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panelhead">
+          <div>
+            <p class="eyebrow">PROVENANCE</p>
+            <h2>Nature of information</h2>
+          </div>
+        </div>
+        <div id="provenance" class="provenance"></div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panelhead">
+        <div>
+          <p class="eyebrow">INTERACTIVE DEMO</p>
+          <h2>Resolve information gaps</h2>
+          <p class="muted">These actions modify synthetic demo state only. Even with every signal available, the system does not auto-approve the project.</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="resolve-requirement">Resolve blocked requirement</button>
+        <button id="close-risk">Close high risk</button>
+        <button id="provide-tax">Provide missing tax estimate</button>
+        <button id="reset" class="secondary">Reset demo</button>
+      </div>
+      <div id="human-gate" class="human-gate"></div>
+    </section>
+
+    <section class="principles">
+      <article><h3>Revision aware</h3><p>Scope, cost and decision belong to an explicit project revision. Changes should invalidate stale conclusions rather than silently preserving them.</p></article>
+      <article><h3>Unknown is valid</h3><p>Missing information remains unknown. The interface must not manufacture precision to make the project look complete.</p></article>
+      <article><h3>Independent review</h3><p>Higher-impact artifacts can require deterministic checks, independent review and a proportional human approval gate.</p></article>
+    </section>
+
+    <footer>
+      <p>Public showcase by Flávio Souza Barros · Engineering × AI × Automation × Project Systems</p>
+      <p><a href="docs/ARCHITECTURE.md">Architecture</a> · <a href="docs/PUBLICATION_BOUNDARY.md">Publication boundary</a> · <a href="SECURITY.md">Security</a></p>
+    </footer>
+  </main>
+  <script src="logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

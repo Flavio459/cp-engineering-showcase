@@ -1,0 +1,49 @@
+{
+  "project": {
+    "code": "AX-17",
+    "title": "Modular Inspection Fixture",
+    "revision": "R02",
+    "status": "QUOTING",
+    "objective": "Design a modular fixture for repeatable dimensional inspection of cylindrical components.",
+    "nature": "DEMO"
+  },
+  "requirements": {
+    "total": 8,
+    "blocked": 1,
+    "note": "One acceptance criterion is awaiting fixture-load confirmation."
+  },
+  "scope": {
+    "items": 6
+  },
+  "concept": {
+    "selected": true,
+    "evaluationComplete": true,
+    "name": "Variant B — modular V-block + adjustable locator"
+  },
+  "risks": [
+    {"id":"R-01","title":"Fixture deflection affects repeatability","probability":3,"severity":4,"status":"OPEN"},
+    {"id":"R-02","title":"Operator pinch point during adjustment","probability":2,"severity":4,"status":"MITIGATING"},
+    {"id":"R-03","title":"Purchased locator lead time","probability":2,"severity":3,"status":"OPEN"},
+    {"id":"R-04","title":"Drawing revision mismatch","probability":1,"severity":4,"status":"MITIGATING"}
+  ],
+  "costs": [
+    {"category":"MATERIAL","description":"Machined base and supports","quantity":1,"unitCost":28400},
+    {"category":"PURCHASED_COMPONENT","description":"Locators, clamps and hardware","quantity":1,"unitCost":19750},
+    {"category":"ENGINEERING","description":"Engineering and detailing effort","quantity":1,"unitCost":22300},
+    {"category":"MANUFACTURING","description":"Machining and finishing","quantity":1,"unitCost":16000}
+  ],
+  "quote": {
+    "indirectCost": 7800,
+    "contingency": 5200,
+    "riskReserve": 3800,
+    "taxAmount": null,
+    "marginAmount": 18400,
+    "discountAmount": 0
+  },
+  "provenance": [
+    {"label":"Project objective","nature":"USER_DECLARED","note":"Synthetic stakeholder statement for the demo."},
+    {"label":"Fixture cost base","nature":"CALCULATED","note":"Calculated from synthetic demo cost items."},
+    {"label":"Engineering effort","nature":"ESTIMATED","note":"Synthetic professional estimate for demonstration."},
+    {"label":"Tax amount","nature":"UNKNOWN","note":"Deliberately missing to demonstrate fail-closed pricing."}
+  ]
+}

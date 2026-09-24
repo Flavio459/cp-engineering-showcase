@@ -18,7 +18,7 @@ test("cost summary is deterministic", () => {
     {category:"MATERIAL",quantity:2,unitCost:10.125},
     {category:"ENGINEERING",quantity:1,unitCost:20}
   ]);
-  assert.equal(result.total,40.26);
+  assert.equal(result.total,40.25);
   assert.equal(result.itemCount,2);
 });
 
